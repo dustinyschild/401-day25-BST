@@ -1,0 +1,23 @@
+{
+  "name": "401-day25-bst",
+  "version": "1.0.0",
+  "description": "",
+  "main": "binarySearchTree.js",
+  "scripts": {
+    "test": "mocha -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dustinyschild/401-day25-BST.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dustinyschild/401-day25-BST/issues"
+  },
+  "homepage": "https://github.com/dustinyschild/401-day25-BST#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3"
+  }
+}
