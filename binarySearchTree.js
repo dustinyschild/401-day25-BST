@@ -8,25 +8,25 @@ function Node(key,data){
 }
 
 Node.prototype.appendChild = function(childObj){
+  let newNode = '';
   if (this.key === childObj.key){
     return null;
   }
   else if (this.key > childObj.key){
     if (!this.left){
-      let newNode = this.left = new Node(childObj.key,childObj.data);
-      return newNode;
+      newNode = this.left = new Node(childObj.key,childObj.data);
     } else {
-      this.left.appendChild(childObj);
+      newNode = this.left.appendChild(childObj);
     }
   }
   else {
     if (!this.right){
-      let newNode = this.right = new Node(childObj.key,childObj.data);
-      return newNode;
+      newNode = this.right = new Node(childObj.key,childObj.data);
     } else {
-      this.right.appendChild(childObj);
+      newNode = this.right.appendChild(childObj);
     }
   }
+  return newNode;
 };
 
 module.exports = Node;
